@@ -1,0 +1,19 @@
+﻿---
+ID: "d8824e82-513b-4cca-a44a-5ddaafec48ac"
+Parent: "10df3c8a-8731-4be4-8ae1-2f947699d91d"
+Template: "96c8e5dd-63c3-496b-a97c-a3e37e1dacba"
+Path: "/sitecore/system/Settings/Rules/Definitions/Elements/XConnect - Custom Contact/Tags"
+DB: master
+BranchID: "9a72c539-dbf8-4dad-96d3-a298fc04add6"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{FD4268C6-E588-4C19-B141-B1AAD488887D}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190816T045311Z

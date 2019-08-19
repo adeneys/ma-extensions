@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <RootNamespace>MAExtensions.Predicates</RootNamespace>
+    <AssemblyName>MAExtensions.Predicates</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Sitecore.Framework.Rules.Abstractions" Version="3.2.0" />
+    <PackageReference Include="Sitecore.XConnect.Segmentation.Predicates.Model" Version="9.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\xConnect Extensions\CustomModel.csproj" />
+  </ItemGroup>
+
+</Project>

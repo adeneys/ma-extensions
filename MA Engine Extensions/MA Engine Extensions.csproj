@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <RootNamespace>MAExtensions.MAEngineExtensions</RootNamespace>
+    <AssemblyName>MAExtensions.MAEngineExtensions</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Sitecore.Xdb.MarketingAutomation.Core" Version="9.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\xConnect Extensions\CustomModel.csproj" />
+  </ItemGroup>
+
+</Project>

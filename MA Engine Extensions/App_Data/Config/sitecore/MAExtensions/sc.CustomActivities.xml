@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <Sitecore>
+    <XConnect>
+      <MarketingAutomation>
+        <Engine>
+          <Services>
+            <MAExtensions.SetCustomFacet>
+              <Type>Sitecore.Xdb.MarketingAutomation.Locator.ActivityTypeRegistration, Sitecore.Xdb.MarketingAutomation</Type>
+              <LifeTime>Singleton</LifeTime>
+              <Options>
+                <Id>{5862e864-6ccf-4673-84be-4d5c59bade8f}</Id>
+                <ImplementationType>MAExtensions.MAEngineExtensions.SetCustomFacet, MAExtensions.MAEngineExtensions</ImplementationType>
+              </Options>
+            </MAExtensions.SetCustomFacet>
+          </Services>
+        </Engine>
+      </MarketingAutomation>
+    </XConnect>
+  </Sitecore>
+</Settings>

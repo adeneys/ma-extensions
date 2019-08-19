@@ -1,0 +1,21 @@
+﻿---
+ID: "205f3c0b-b189-43b8-a296-3babb6b883e1"
+Parent: "b4f29607-e13d-42df-9a60-33e31fb39ebc"
+Template: "3505f93a-1bbd-4ea4-bfab-09f44e88a594"
+Path: /sitecore/system/Settings/Analytics/Marketing Automation/Activity Types/Set Custom Facet/Paths/Default
+DB: master
+SharedFields:
+- ID: "ec7ee750-6c26-4def-aa5f-71dcd3a875de"
+  Hint: Key
+  Value: default
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "229cea16-4ad6-495a-aa42-0e0e05709162"
+      Hint: Name
+      Value: Default
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190819T004558Z

@@ -1,0 +1,30 @@
+﻿---
+ID: "2be0eece-0e2e-40aa-91d6-bcf3d546a130"
+Parent: "c284bae8-e914-4492-870e-306ddf3382b6"
+Template: "2683398d-1a6e-47fc-8283-56e74bbc2639"
+Path: /sitecore/system/Settings/Analytics/Marketing Automation/Activity Types/Set Custom Facet/Parameters/Rigel
+DB: master
+SharedFields:
+- ID: "40f23c40-60f0-4621-85ff-a762e98dc6c3"
+  Hint: Editor ID
+  Value: "B5DD8B01-C09A-4FDA-8900-758C84171743"
+- ID: "b80911e1-9625-418b-9951-21b282ce33f0"
+  Hint: Key
+  Value: Rigel
+- ID: "efa373d2-fca3-4709-a2e2-a0c8ca46dd7e"
+  Hint: Editor Parameters
+  Value: ObjectType=System.String
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190819T004610Z
+    - ID: "56d67159-cb7c-4f57-962f-da5b610ff542"
+      Hint: Description
+      Value: The Rigel value
+    - ID: "c2907341-19e2-476d-8932-0873f20bcc08"
+      Hint: Name
+      Value: Rigel

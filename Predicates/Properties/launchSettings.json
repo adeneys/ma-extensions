@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Predicates": {
+      "commandName": "Executable",
+      "executablePath": "C:\\inetpub\\wwwroot\\sc920rtm.xconnect\\App_Data\\jobs\\continuous\\AutomationEngine\\maengine.exe"
+    }
+  }
+}

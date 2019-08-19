@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <RootNamespace>MAExtensions.XMExtensions</RootNamespace>
+    <AssemblyName>MAExtensions.XMExtensions</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Unicorn" Version="4.1.1" />
+  </ItemGroup>
+
+</Project>

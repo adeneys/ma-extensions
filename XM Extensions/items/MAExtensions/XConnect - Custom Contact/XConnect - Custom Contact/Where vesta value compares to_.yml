@@ -1,0 +1,25 @@
+﻿---
+ID: "1294d103-8e1a-4f9e-8592-d50fdea44466"
+Parent: "10df3c8a-8731-4be4-8ae1-2f947699d91d"
+Template: "f0d16eee-3a05-4e43-a082-795a32b873c0"
+Path: "/sitecore/system/Settings/Rules/Definitions/Elements/XConnect - Custom Contact/Where vesta value compares to some value"
+DB: master
+SharedFields:
+- ID: "ab51c8b2-f0e1-4471-9aae-cc080d774923"
+  Hint: Type
+  Value: MAExtensions.Predicates.CompareCustomFacetNumber, MAExtensions.Predicates
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190816T045505Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "af321234-4eb9-4ef5-9197-65903351939c"
+      Hint: Text
+      Value: "where the contact's Vesta property of the Surak facet [Comparison,Tree,root=/sitecore/system/Settings/Rules/Definitions/XConnect - Numeric Operators&resulttype=name,compares to] [Value,Integer,,specific value]"

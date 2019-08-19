@@ -1,0 +1,36 @@
+﻿using Sitecore.XConnect;
+using Sitecore.XConnect.Collection.Model;
+using Sitecore.XConnect.Schema;
+
+namespace MAExtensions.CustomModel
+{
+    /// <summary>
+    /// A custom xConnect model.
+    /// </summary>
+    public class AkiraModel
+    {
+        private static XdbModel s_model;
+
+        /// <summary>
+        /// Gets the instance of the model.
+        /// </summary>
+        public static XdbModel Model => s_model ?? (s_model = InitModel());
+
+        /// <summary>
+        /// Initializes the model.
+        /// </summary>
+        /// <returns>An instance of the model.</returns>
+        private static XdbModel InitModel()
+        {
+            var builder = new XdbModelBuilder("akira", new XdbModelVersion(1, 0));
+
+            // Reference the default collection model
+            builder.ReferenceModel(CollectionModel.Model);
+
+            // Register contact facets
+            builder.DefineFacet<Contact, SurakFacet>(SurakFacet.DefaultFacetName);
+
+            return builder.BuildModel();
+        }
+    }
+}

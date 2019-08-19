@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <Sitecore>
+    <XConnect>
+      <Services>
+        <DescriptorLocator>
+          <Options>
+            <PredicateDescriptors>
+              <BarCompares>
+                <id>{1294D103-8E1A-4F9E-8592-D50FDEA44466}</id>
+                <type>MAExtensions.Predicates.CompareCustomFacetNumber, MAExtensions.Predicates</type>
+              </BarCompares>
+            </PredicateDescriptors>
+          </Options>
+        </DescriptorLocator>
+      </Services>
+    </XConnect>
+  </Sitecore>
+</Settings>

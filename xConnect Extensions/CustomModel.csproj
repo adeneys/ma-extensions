@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>MAExtensions.CustomModel</RootNamespace>
+    <AssemblyName>MAExtensions.CustomModel</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Sitecore.XConnect.Collection.Model" Version="9.2.0" />
+  </ItemGroup>
+
+</Project>
