@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Sitecore.XConnect;
 using Sitecore.XConnect.Client;
 using Sitecore.XConnect.Client.WebApi;
+using Sitecore.XConnect.Collection.Model;
 using Sitecore.XConnect.Schema;
 using Sitecore.XConnect.Serialization;
 using Sitecore.Xdb.Common.Web;
@@ -100,13 +101,23 @@ namespace Orchestrator
         {
             Console.WriteLine("Enter the contact's demo identifier");
             var identifier = Console.ReadLine();
-            
+
             var contactIdentifier = new ContactIdentifier("demo", identifier, ContactIdentifierType.Known);
             _contact = new Contact(contactIdentifier);
+
+            var firstName = identifier;
+
+            if (firstName[0] > 'Z')
+                firstName = firstName[0].ToString().ToUpper() + firstName.Substring(1);
+
+            var personalFacet = _contact.Personal() ?? new PersonalInformation(); ;
+            personalFacet.FirstName = firstName;
+            personalFacet.LastName = "Smith";
 
             using (var client = await CreateXConnectClient())
             {
                 client.AddContact(_contact);
+                client.SetFacet(_contact, personalFacet);
                 await client.SubmitAsync(CancellationToken.None);
             }
 
@@ -118,7 +129,7 @@ namespace Orchestrator
             Console.WriteLine("Enter the contact's demo identifier");
             var identifier = Console.ReadLine();
             var reference = new IdentifiedContactReference("demo", identifier);
-            var expandOptions = new ContactExpandOptions(SurakFacet.DefaultFacetName);
+            var expandOptions = new ContactExpandOptions(SurakFacet.DefaultFacetName, PersonalInformation.DefaultFacetKey);
 
             using (var client = await CreateXConnectClient())
             {
@@ -126,9 +137,21 @@ namespace Orchestrator
             }
 
             if (_contact == null)
+            {
                 Console.WriteLine("Contact not found");
-            else
-                Console.WriteLine("Contact loaded");
+                return;
+            }
+            
+            Console.WriteLine("Contact loaded");
+
+            foreach(var id in _contact.Identifiers)
+            {
+                Console.WriteLine($"identifier: ({id.Source}, {id.Identifier})");
+            }
+
+            var personalFacet = _contact.Personal() ?? new PersonalInformation(); ;
+            Console.WriteLine($"First name: {personalFacet.FirstName}");
+            Console.WriteLine($"Last name: {personalFacet.LastName}");
         }
 
         private void ShowFacet()
