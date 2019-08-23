@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29209.62
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomModel", "xConnect Extensions\CustomModel.csproj", "{20FA3567-7E51-4AAD-8811-34375064B219}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomModel", "Custom Model\Custom Model.csproj", "{20FA3567-7E51-4AAD-8811-34375064B219}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MA Engine Extensions", "MA Engine Extensions\MA Engine Extensions.csproj", "{6679BE84-C46F-4626-9306-A11FDDDC3D27}"
 EndProject

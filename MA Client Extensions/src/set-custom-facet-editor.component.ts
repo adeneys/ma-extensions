@@ -1,4 +1,4 @@
-import { Component, OnInit, Injector } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { EditorBase } from "@sitecore/ma-core";
 
 @Component({
@@ -6,12 +6,8 @@ import { EditorBase } from "@sitecore/ma-core";
     template: `
         <section class="content">
             <div class="form-group">
-                <label>Set the Rigel value.</label>
-            </div>
-            <div class="form-group">
-                <div class="row">
-                    <input type="text" class="form-control" [(ngModel)]="rigel" />
-                </div>
+                <label for="rigel">Set the Rigel value</label>
+                <input id="rigel" type="text" class="form-control" [(ngModel)]="rigel" />
             </div>
         </section>
     `
@@ -19,10 +15,6 @@ import { EditorBase } from "@sitecore/ma-core";
 
 export class SetCustomFacetEditor extends EditorBase implements OnInit {
     rigel: string;
-
-    /*constructor(private injector: Injector) {
-        super();
-    }*/
 
     ngOnInit(): void {
         this.rigel = this.model ? this.model.rigel || '' : '';

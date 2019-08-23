@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\xConnect Extensions\CustomModel.csproj" />
+    <ProjectReference Include="..\Custom Model\Custom Model.csproj" />
   </ItemGroup>
   
 </Project>

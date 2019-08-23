@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { SetCustomFacetEditor } from './editor/set-custom-facet-editor.component';
+import { SetCustomFacetEditor } from './set-custom-facet-editor.component';
 
 @NgModule({
     imports:[
