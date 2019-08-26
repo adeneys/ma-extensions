@@ -32,17 +32,13 @@ namespace MAExtensions.Predicates
             var contact = context.Fact<Contact>();
 
             if(contact == null)
-            {
                 return false;
-            }
 
             var facet = contact.GetFacet<SurakFacet>(SurakFacet.DefaultFacetName);
 
             // The facet might be null if it's never been set.
             if(facet == null)
-            {
                 return false;
-            }
 
             var result = Comparison.Evaluate(facet.Vesta, Value);
             return result;
